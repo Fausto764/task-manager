@@ -1,9 +1,8 @@
 main {
-  width: 100vw;
   min-height: 80vh;
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-    align-items: center;
-    padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  padding: 2rem;
 }
