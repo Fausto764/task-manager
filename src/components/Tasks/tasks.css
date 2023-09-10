@@ -1,0 +1,21 @@
+.article-task {
+  background-color: rgb(74, 19, 255);
+
+  border-radius: 2rem;
+  border: none;
+  transition: all 1s ease-out;
+  border: 0.2rem solid #000;
+  margin: 0 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+}
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}

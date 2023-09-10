@@ -1,0 +1,41 @@
+form {
+  min-width: 50vw;
+  min-height: 60vh;
+  position: absolute;
+  left: 25%;
+  top: 20%;
+  background-color: #242424;
+  border: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  align-items: center;
+  border-radius: 2rem;
+  justify-content: space-evenly;
+  display: none;
+}
+input {
+  height: 3rem;
+  border-radius: 2rem;
+  padding: 1rem;
+  width: 80%;
+  border: 1px solid #000;
+  transition: all 1s ease-out;
+}
+input:hover {
+  border: 1px solid #fff;
+}
+button {
+  background-color: rgb(74, 19, 255);
+  height: 3rem;
+  width: 7rem;
+  border-radius: 2rem;
+  padding: 1rem;
+  outline: none;
+  border: 1px solid #000;
+  transition: all 1s ease-out;
+}
+button:hover {
+  border: 1px solid #fff;
+}
