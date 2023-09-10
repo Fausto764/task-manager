@@ -6,16 +6,21 @@ import { ModalCreateTask } from "../ModalCreateTask/ModalCreateTask"
 import { ModalUpdateTask } from "../modalUpdateTask/ModalUpdateTask"
 import "./basicTable.css"
 const BasicTable = () => {
-  const { setModalCreate } = useContext(TaskContext)
+  const { setModalCreate, setTasks } = useContext(TaskContext)
   const handleModalCreate = () => {
     setModalCreate(true)
+  }
+  const handleDeleteTasks = () => {
+    setTasks([])
   }
   return (
     <section className="section-tasks-container">
       <header className="header-tasks">
         <h3>Tasks</h3>
         <ul className="header__ul">
-          <li className="header__ul__li">Delete Tasks</li>
+          <li className="header__ul__li" onClick={handleDeleteTasks}>
+            Delete Tasks
+          </li>
           <li className="header__ul__li" onClick={handleModalCreate}>
             Create New Task
           </li>

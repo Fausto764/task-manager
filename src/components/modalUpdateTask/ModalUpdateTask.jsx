@@ -1,7 +1,7 @@
 import "../modalCreateTask/modalCreateTask.css"
 import { useContext } from "react"
 import { TaskContext } from "../../TaskContext/TaskContext"
-const ModalUpdateTask = ({ index }) => {
+const ModalUpdateTask = () => {
   const {
     tasks,
     setTasks,
@@ -18,6 +18,7 @@ const ModalUpdateTask = ({ index }) => {
       setTasks((prevList) => {
         prevList = [...tasks]
         prevList[currentIndex] = register
+        window.localStorage.setItem("tasks", JSON.stringify(prevList))
         return prevList
       })
       setRegister("") // Limpia el input después de agregar una tarea
