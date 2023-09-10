@@ -69,5 +69,13 @@ h3 {
 @media screen and (max-width: 750px) {
   .header-tasks {
     gap: 2%;
+    flex-direction: column;
+    height: 13rem;
+  }
+  .header__ul {
+    flex-direction: column;
+  }
+  .section-tasks-container {
+    width: 100%;
   }
 }

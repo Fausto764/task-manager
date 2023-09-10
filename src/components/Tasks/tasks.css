@@ -1,6 +1,5 @@
 .article-task {
   background-color: rgb(74, 19, 255);
-
   border-radius: 2rem;
   border: none;
   transition: all 1s ease-out;
@@ -18,4 +17,10 @@
   flex-direction: row;
   align-items: center;
   gap: 1rem;
+}
+@media screen and (max-width: 750px) {
+  .article-task {
+    width: 100%;
+    margin: 0;
+  }
 }
